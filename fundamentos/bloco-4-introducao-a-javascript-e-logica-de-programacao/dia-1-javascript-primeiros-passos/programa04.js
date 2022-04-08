@@ -5,5 +5,5 @@ if (valor > 0){
 }else if(valor < 0){
     console.log("Negative")
 }else{
-    console.log("Zero")
+    console.log("Zero") //ajuste 
 };
