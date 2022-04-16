@@ -26,8 +26,10 @@ ondeEuEstou.lastChild.innerText = "Meu filho";
 
 let primeiroFilhoFilho = document.getElementById("primeiroFilhoDoFilho")
 
-primeiroFilhoFilho.appendChild(document.createElement('section'))
+const filhoDoFilhoDoFilho = primeiroFilhoFilho.appendChild(document.createElement('section'))
+
+filhoDoFilhoDoFilho.id = "filho-do-filho-do-filho"
 
 primeiroFilhoFilho.lastChild.innerText = "Filho do Filho do Filho";
 
-document.getElementsByTagName("section")[4].parentElement.parentElement.nextElementSibling
+document.getElementById("filho-do-filho-do-filho").parentElement.parentElement.nextElementSibling
