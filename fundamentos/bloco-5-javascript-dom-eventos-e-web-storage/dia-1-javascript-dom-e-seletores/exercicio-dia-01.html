@@ -47,7 +47,6 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
@@ -70,9 +69,14 @@
 
     mudarCorCentro("rgb(250, 250, 250)");
 
-    let titulo = document.getElementsByTagName("h1")[0]
+    let titulo = document.getElementsByTagName("h1")[0];
 
-    titulo.innerText = "Exercício 5.1 - Javascript"
+    titulo.innerText = "Exercício 5.1 - Javascript";
+
+  
+    let paragrafo01 = document.getElementsByTagName("p")[0]
+       
+    paragrafo01.innerHTML = paragrafo01.innerHTML.toUpperCase()
 
     </script>
   </body>
