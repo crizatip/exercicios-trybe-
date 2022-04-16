@@ -5,3 +5,4 @@ document.getElementById("elementoOndeVoceEsta").firstElementChild.innerHTML = "F
 document.getElementById("pai").firstElementChild
 
 document.getElementById("elementoOndeVoceEsta").previousElementSibling
+
