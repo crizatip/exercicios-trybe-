@@ -7,3 +7,5 @@ document.getElementById("pai").firstElementChild
 document.getElementById("elementoOndeVoceEsta").previousElementSibling
 
 document.getElementById("elementoOndeVoceEsta").nextSibling
+
+document.getElementById("elementoOndeVoceEsta").nextElementSibling
