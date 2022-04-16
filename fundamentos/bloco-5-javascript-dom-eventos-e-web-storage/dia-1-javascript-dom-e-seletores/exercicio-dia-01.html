@@ -47,7 +47,6 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
@@ -77,6 +76,18 @@
     let paragrafo01 = document.getElementsByTagName("p")[0]
        
     paragrafo01.innerHTML = paragrafo01.innerHTML.toUpperCase()
+
+    function mostrarP(){
+      let paragrafos = document.getElementsByTagName("p");
+
+      for(let index = 0; index < paragrafos.length; index+=1 ){
+        console.log(paragrafos[index].innerHTML);
+       
+      }
+
+    }
+
+    mostrarP()
 
     </script>
   </body>
