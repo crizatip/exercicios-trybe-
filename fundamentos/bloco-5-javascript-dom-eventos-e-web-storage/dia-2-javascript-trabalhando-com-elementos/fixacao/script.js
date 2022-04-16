@@ -33,3 +33,11 @@ filhoDoFilhoDoFilho.id = "filho-do-filho-do-filho"
 primeiroFilhoFilho.lastChild.innerText = "Filho do Filho do Filho";
 
 document.getElementById("filho-do-filho-do-filho").parentElement.parentElement.nextElementSibling
+
+pai.removeChild(document.getElementById("primeiroFilho"))
+pai.removeChild(document.getElementById("terceiroFilho"))
+pai.removeChild(document.getElementById("quartoEUltimoFilho"))
+document.getElementById("primeiroFilhoDoFilho").removeChild(document.getElementById("filho-do-filho-do-filho"))
+
+
+
