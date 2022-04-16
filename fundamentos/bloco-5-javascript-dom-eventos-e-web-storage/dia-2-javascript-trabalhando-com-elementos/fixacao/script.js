@@ -1,11 +1,33 @@
-document.getElementById("elementoOndeVoceEsta").parentNode.style.color = "red"
+document.getElementById("elementoOndeVoceEsta").parentNode.style.color = "red";
 
-document.getElementById("elementoOndeVoceEsta").firstElementChild.innerHTML = "Filho do Filho"
+document.getElementById("elementoOndeVoceEsta").firstElementChild.innerHTML = "Filho do Filho";
 
-document.getElementById("pai").firstElementChild
+document.getElementById("pai").firstElementChild;
 
-document.getElementById("elementoOndeVoceEsta").previousElementSibling
+document.getElementById("elementoOndeVoceEsta").previousElementSibling;
 
-document.getElementById("elementoOndeVoceEsta").nextSibling
+document.getElementById("elementoOndeVoceEsta").nextSibling;
 
-document.getElementById("elementoOndeVoceEsta").nextElementSibling
+document.getElementById("elementoOndeVoceEsta").nextElementSibling;
+
+document.getElementById("pai").lastElementChild.previousElementSibling;
+
+let pai = document.getElementById("pai");
+
+pai.appendChild(document.createElement('p'));
+
+pai.lastChild.innerText = "teste";
+
+let ondeEuEstou = document.getElementById("elementoOndeVoceEsta")
+
+ondeEuEstou.appendChild(document.createElement('p'))
+
+ondeEuEstou.lastChild.innerText = "Meu filho";
+
+let primeiroFilhoFilho = document.getElementById("primeiroFilhoDoFilho")
+
+primeiroFilhoFilho.appendChild(document.createElement('section'))
+
+primeiroFilhoFilho.lastChild.innerText = "Filho do Filho do Filho";
+
+document.getElementsByTagName("section")[4].parentElement.parentElement.nextElementSibling
