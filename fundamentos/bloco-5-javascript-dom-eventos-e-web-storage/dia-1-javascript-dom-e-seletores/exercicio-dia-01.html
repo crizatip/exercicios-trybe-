@@ -54,6 +54,19 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+    function comoMeVejo(texto){
+        document.getElementsByTagName("p")[1].innerText = texto
+    }
+
+    comoMeVejo("vivo")
+
+    function mudarCorMain(cor){
+        document.querySelectorAll(".main-content")[0].style.backgroundColor = cor
+    }
+    
+    mudarCorMain("rgb(76,164,109)")
+
     </script>
   </body>
 </html>
