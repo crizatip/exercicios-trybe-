@@ -2,19 +2,27 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log() ;
 
-for(number of numbers){
+// for(number of numbers){
 
-console.log(number)
+// console.log(number);
 
-}
-
+// };
 
 // Para o segundo exercício, some todos os valores contidos no array e imprima o resultado;
 
+let resultado = 0
+
+for(let i = 0; i < numbers.length; i+=1){
+
+resultado = numbers[i] + resultado
+
+};
+
+console.log(resultado)
+
+
 
 // Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
-
-
 // A média aritmética é o resultado da soma de todos os elementos divido pelo número total de elementos.
 
 
