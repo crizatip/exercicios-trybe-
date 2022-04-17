@@ -81,7 +81,19 @@
     // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 
     let secaoEsquerda = main.appendChild(document.createElement("section"));
-    secao.className = "center-left-content";    
+    secaoEsquerda.className = "left-content";    
+
+    // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+    let secaoDireita = main.appendChild(document.createElement("section"));
+    secaoDireita.className = "right-content";  
+
+    // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . 
+    // Esse elemento deve ser filho do section criado no passo 5;    
+
+    let imgSecaoEsquerda = secaoEsquerda.appendChild(document.createElement("img"));
+    imgSecaoEsquerda.src = "https://picsum.photos/200";
+    imgSecaoEsquerda.className = "small-image"
 
 
 
