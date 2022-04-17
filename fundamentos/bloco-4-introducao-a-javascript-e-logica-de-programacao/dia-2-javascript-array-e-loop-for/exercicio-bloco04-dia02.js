@@ -74,6 +74,7 @@ for(let i = 1; i < numbers.length; i+=1){
     };
 };
 console.log(impar);
+
 // Utilizando for , descubra qual o menor valor contido no array e imprima-o;
 
 let menorNumero = numbers[0];
@@ -99,6 +100,12 @@ array25.push(i);
 console.log(array25);
 
 
-
-
 // Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+
+
+for(let i = 1; i < array25.length; i+=1){
+  
+let divisoes = array25[i] / 2;
+    
+    console.log(divisoes);
+    };
