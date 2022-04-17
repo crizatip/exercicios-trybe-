@@ -103,12 +103,21 @@
     let listaValores = secaoDireita.appendChild(document.createElement("ul"));
        
     for(let i = 0; i < valores.length; i+= 1){
-        let valoresLista = valores[i]
-        console.log(valoresLista)
+        
+        let valoresLista = valores[i];
+        console.log(valoresLista);
 
-       let linhasNumeros = listaValores.appendChild(document.createElement("li"))
-        linhasNumeros.innerText = valoresLista
+       let linhasNumeros = listaValores.appendChild(document.createElement("li"));
+        linhasNumeros.innerText = valoresLista;
     };
+
+    // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+    
+    main.appendChild(document.createElement("h3"));
+    main.appendChild(document.createElement("h3"));
+    main.appendChild(document.createElement("h3"));
+
+
 
 
     </script>
