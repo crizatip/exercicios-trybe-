@@ -93,8 +93,22 @@
 
     let imgSecaoEsquerda = secaoEsquerda.appendChild(document.createElement("img"));
     imgSecaoEsquerda.src = "https://picsum.photos/200";
-    imgSecaoEsquerda.className = "small-image"
+    imgSecaoEsquerda.className = "small-image";
 
+    // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... 
+    // como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+
+    let valores = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
+
+    let listaValores = secaoDireita.appendChild(document.createElement("ul"));
+       
+    for(let i = 0; i < valores.length; i+= 1){
+        let valoresLista = valores[i]
+        console.log(valoresLista)
+
+       let linhasNumeros = listaValores.appendChild(document.createElement("li"))
+        linhasNumeros.innerText = valoresLista
+    };
 
 
     </script>
