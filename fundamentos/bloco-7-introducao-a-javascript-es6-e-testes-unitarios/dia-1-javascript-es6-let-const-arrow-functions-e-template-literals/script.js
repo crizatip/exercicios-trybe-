@@ -22,3 +22,4 @@ const testingScope = escopo => {
 
   
 console.log(oddsAndEvens([13, 3, 4, 10, 7, 2]));
+
