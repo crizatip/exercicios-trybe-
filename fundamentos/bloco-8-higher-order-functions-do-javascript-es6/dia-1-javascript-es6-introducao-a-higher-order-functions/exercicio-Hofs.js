@@ -1,36 +1,36 @@
 
-//  Crie uma função que retorne um objeto no formato { nomeCompleto, email } representando uma nova pessoa contratada
-// sua função deve receber como parâmetro o nome completo da pessoa funcionária e a partir 
-// dele gerar automaticamente um email no formato nome_da_pessoa@trybe.com.
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-const nomeFuncionario = (nome) => {
-    const ajusteNome = nome.replace(/ /g,'_') 
-    const newemail = `${ajusteNome}@trybe.com`
-    const objeto = {
-        nome: nome,
-        email: newemail.toLocaleLowerCase()
+
+const checarRespostas = (respostas, gabarito) => {
+    
+    const arrayRes = respostas
+    const arrayGab = gabarito
+
+    for(let res of arrayRes){
+        return res
+    };
+
+    for(let gab of arrayGab){
+        return gab
+    };
+    
+    const pontuação = 0
+    if (res == gab){
+        pontuação+=1
+    }else if(res !== gab){
+        pontuação-=0.5
     }
-return objeto
+    console.log (pontuação)
+}
+
+const hof = (respostas, gabarito, callback) => {
+
+    return callback(respostas, gabarito)
+
 };
 
-const resultado = nomeFuncionario('Cristiano Pita')
-console.log(resultado)
-
-//Passe sua função como parâmetro da HOF newEmployees para criar cada pessoa contratada em seu respectivo id
-
-const newEmployees = (callback) => {
-    const employees = {
-      id1: callback("Pedro Guerra"), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-      id2: callback("Luiza Drumond"), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-      id3: callback("Carla Paiva") // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
-    }
-    return employees;
-  }; 
-
-const teste = newEmployees(nomeFuncionario)
-console.log(teste)
-
-
-
+hof(RIGHT_ANSWERS,STUDENT_ANSWERS,checarRespostas())
 
 module.exports = {}
